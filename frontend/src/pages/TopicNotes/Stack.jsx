@@ -1,4 +1,3 @@
-JavaScript
 import React, { useState } from "react";
 import StackCodeTabs from "./StackCodeTabs";
 

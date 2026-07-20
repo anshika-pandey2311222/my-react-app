@@ -1,49 +1,4 @@
-Let's make this page far more comprehensive and interactive. To tackle this, we will dive deep into the specific variants of linked lists, compare their layouts directly to arrays, embed an interactive visualizer, and provide a massively upgraded, complete code version of your React component.
-
-Here is the structured expansion of your content.
-
----
-
-## 1. Deep Dive: Types of Linked Lists
-
-Linked lists change depending on how nodes point to one another. Choosing the right layout depends entirely on whether you need backward traversal, cyclic patterns, or absolute memory optimization.
-
-### A. Singly Linked List
-
-The simplest variation. Each node contains a data field and exactly one pointer (`next`) pointing to the succeeding node. The last node's pointer points to `null`, signaling the end of the line.
-
-* **Best for:** Simple stacks, queues, or basic data staging where you only read elements from front to back.
-* **Memory Footprint:** Lowest overhead (only 1 pointer per node).
-
-### B. Doubly Linked List
-
-Every node holds two pointers: `next` (pointing forward) and `prev` (pointing backward).
-
-* **Best for:** Applications requiring bidirectional navigation, like a browser's back/forward history or a music player queue.
-* **Trade-off:** Allows easy deletion/insertion relative to a node without traversing the whole list first, but consumes double the pointer memory overhead.
-
-### C. Circular Linked List
-
-In a circular structure, no node points to `null`.
-
-* **Singly Circular:** The last node's `next` points back to the first node (`head`).
-* **Doubly Circular:** The last node points to the first, and the first node's `prev` points to the last.
-* **Best for:** Repeated loop scheduling tasks, such as Round-Robin CPU process allocation or multiplayer game turn systems.
-
----
-
-## 2. Dynamic Linked List Visualizer
-
-Use the interactive tool below to simulate how nodes connect dynamically in memory. Try updating values, adding items, and visualizing how pointers change state compared to solid, rigid array indexes.
-
----
-
-## 3. The Expanded React Code
-
-Here is the comprehensive, upgraded code for your main `LinkedList.jsx` view. It includes the structural layout variants, architectural breakdowns, a solid comparative data matrix, and clean styling hooks.
-
-```jsx
-import React, { useState } from "react";
+import React from "react";
 import LinkedListCodeTabs from "./LinkedListCodeTabs";
 
 const videos = [
@@ -274,5 +229,3 @@ export default function LinkedList() {
     </div>
   );
 }
-
-```
