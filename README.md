@@ -1,81 +1,68 @@
-# AlgoMate
+# ⚡ AlgoMate
 
-**run live** https://algomate-yhqd.onrender.com/
+> Your all-in-one Data Structures and Algorithms (DSA) learning hub, complete with curated notes, an online compiler, and an AI coding assistant.
 
-**AlgoMate** is a full-stack project that serves as a **DSA Helper platform**, featuring:  
-
-- **Topic-wise notes** for Data Structures and Algorithms.  
-- **Online code compiler** for multiple languages.  
-- **AI-powered chatbot** to help users with coding queries.  
-
-This project is built for learning, practice, and interview preparation.
+🌐 **Live Demo:** [AlgoMate Application](https://algomate-yhqd.onrender.com/)
 
 ---
 
-## 🛠 Features
-
-- **DSA Notes:** Organized notes for Arrays, Linked Lists, Trees, Stacks, Recursion, Searching, Sorting, etc.  
-- **Compiler:** Run your code directly in the browser (supports Python, Java, C++, etc.).  
-- **Chatbot:** AI-powered assistant integrated to answer coding questions and guide users.  
-- **Modern UI:** Built with React and Tailwind CSS for a clean interface.  
-- **Backend:** Node.js or Python backend for chatbot and compiler functionalities.
-
----
-
-## 🏗 Tech Stack
-
-- **Frontend:** React, Tailwind CSS, JavaScript  
-- **Backend:** Node.js / Python (FastAPI / Flask)  
-- **AI Chatbot:** gemini API 
-- **Compiler Integration:** Online code execution APIs  
+## 📌 Table of Contents
+- [About the Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Project Architecture](#-project-architecture)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## 🚀 Installation
+## 💡 About the Project
 
-1. **Clone the repo**
-```bash
-git clone https://github.com/anshika-pandey2311222/AlgoMate.git
-cd AlgoMate
-npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) Backend Setup
+**AlgoMate** is designed to streamline your DSA preparation for coding interviews and competitive programming. Instead of switching between multiple tabs for notes, code compilation, and doubt clearing, AlgoMate brings everything into a single, seamless platform.
 
-cd backend
-# Install dependencies
-pip install -r requirements.txt
-npm install
+---
 
+## ✨ Key Features
 
-Frontend Setup
+- 📚 **Topic-Wise DSA Notes:** Comprehensive, structured guides covering core topics like Arrays, Linked Lists, Trees, Stacks, Queues, Recursion, Searching, Sorting, and Dynamic Programming.
+- 💻 **In-Browser Code Compiler:** Execute and test your code directly on the web with support for popular languages (Python, C++, Java, JavaScript).
+- 🤖 **AI-Powered Coding Assistant:** Integrated with the Gemini API to help debug errors, explain complex algorithms, and provide hints on demand.
+- 🎨 **Responsive & Modern UI:** Designed with React and Tailwind CSS for a fast, clean, and interactive user experience.
 
-cd frontend
-npm install
-npm start
+---
 
+## 🛠 Tech Stack
 
-Run the backend server
+### **Frontend**
+- **Framework:** React.js
+- **Styling:** Tailwind CSS
+- **Icons & Components:** Lucide React / Heroicons
 
-python app.py
-# or Node.js backend
-node server.js
+### **Backend**
+- **Runtime/Framework:** Node.js (Express) *or* Python (FastAPI / Flask)
+- **AI Integration:** Google Gemini API
+- **Code Execution:** Third-party Code Execution APIs (e.g., Judge0, PaizaIO)
 
-🖥 Usage
+---
 
-Visit the frontend at http://localhost:3000
+## 📂 Project Architecture
 
-Access notes, run code in the compiler, or chat with the AI assistant.
-
-🔒 Environment Variables
-
-Make sure to create a .env file in the backend folder for API keys and sensitive data.
-Example:
-
-API_KEY=your_api_key_here
-OTHER_SECRET=secret_value
-
-
-
-📂 Folder Structure
+```text
 AlgoMate/
-├─ backend/         # Backend server & API logic
-├─ frontend/        # React frontend
-└─ README.md
+├── backend/          # Backend server code (Express/Flask)
+│   ├── routes/       # API endpoints (Compiler, AI Assistant)
+│   ├── controllers/  # Logic handlers
+│   ├── .env.example  # Template for backend environment variables
+│   └── package.json  # or requirements.txt
+├── frontend/         # React single-page application
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── utils/
+│   └── package.json
+└── README.md
