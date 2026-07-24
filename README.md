@@ -42,7 +42,6 @@ npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/
 cd backend
 # Install dependencies
 pip install -r requirements.txt
-# or
 npm install
 
 
@@ -55,7 +54,6 @@ npm start
 
 Run the backend server
 
-# Python backend
 python app.py
 # or Node.js backend
 node server.js
@@ -75,7 +73,6 @@ API_KEY=your_api_key_here
 OTHER_SECRET=secret_value
 
 
-Note: .env is ignored in Git to prevent exposing sensitive information.
 
 📂 Folder Structure
 AlgoMate/
