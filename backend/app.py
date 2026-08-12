@@ -1,12 +1,16 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from chat_api import chat_bp
+from dotenv import load_dotenv
 import requests
 import os
 
+# Load environment variables from .env file if present
+load_dotenv()
+
 app = Flask(__name__)
 
-# Proper CORS for Render
+# Proper CORS for Render & local dev
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 app.register_blueprint(chat_bp)

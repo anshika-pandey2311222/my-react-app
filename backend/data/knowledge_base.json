@@ -1,0 +1,201 @@
+[
+  {
+    "title": "Array",
+    "category": "Notes Data",
+    "content": "Introduction: Arrays store elements of the same type in contiguous memory locations. They allow constant time access using indices.\nTraversal: Traverse arrays using for loop, while loop or for...of loop. Time Complexity: O(n).\nInsertion: Insertion at the end is O(1), while insertion at the beginning or middle requires shifting elements, making it O(n).\nDeletion: Deleting an element from the middle requires shifting remaining elements. Time Complexity: O(n).\nCommon Problems: Two Sum, Kadane",
+    "keywords": [
+      "array"
+    ]
+  },
+  {
+    "title": "LinkedList",
+    "category": "Notes Data",
+    "content": "Introduction: A Linked List consists of nodes where each node stores data and a pointer to the next node.\nTypes: Singly Linked List, Doubly Linked List, Circular Linked List and Circular Doubly Linked List.\nInsertion: Insertion at head is O(1). Tail insertion depends on whether a tail pointer exists.\nDeletion: Delete by changing links instead of shifting elements like arrays.\nImportant Problems: Reverse Linked List, Detect Cycle, Merge Two Sorted Lists, Middle of Linked List, Remove Nth Node.",
+    "keywords": [
+      "linked",
+      "linkedlist",
+      "list"
+    ]
+  },
+  {
+    "title": "Stack",
+    "category": "Notes Data",
+    "content": "Introduction: Stack follows Last In First Out (LIFO).\nOperations: push(), pop(), peek(), isEmpty().\nApplications: Undo feature, Browser History, Expression Evaluation, DFS.\nComplexity: Push and Pop operations take O(1) time.\nProblems: Valid Parentheses, Min Stack, Next Greater Element, Largest Rectangle Histogram.",
+    "keywords": [
+      "stack"
+    ]
+  },
+  {
+    "title": "Queue",
+    "category": "Notes Data",
+    "content": "Introduction: Queue follows First In First Out (FIFO).\nTypes: Simple Queue, Circular Queue, Priority Queue, Deque.\nApplications: Scheduling, BFS Traversal, Printer Queue, CPU Scheduling.\nComplexity: Enqueue and Dequeue operations are O(1).\nProblems: Implement Queue using Stacks, Rotten Oranges, Sliding Window Maximum.",
+    "keywords": [
+      "queue"
+    ]
+  },
+  {
+    "title": "Tree",
+    "category": "Notes Data",
+    "content": "Introduction: Trees are hierarchical data structures consisting of nodes connected by edges.\nBinary Tree: Each node has at most two children called left and right.\nTraversals: Inorder, Preorder, Postorder and Level Order Traversal.\nBinary Search Tree: Left subtree values are smaller and right subtree values are greater.\nProblems: Maximum Depth, Diameter, LCA, Validate BST, Serialize and Deserialize Tree.",
+    "keywords": [
+      "tree"
+    ]
+  },
+  {
+    "title": "Graph",
+    "category": "Notes Data",
+    "content": "Introduction: Graphs consist of vertices connected by edges.\nRepresentation: Adjacency List and Adjacency Matrix.\nTraversal: Breadth First Search (BFS) and Depth First Search (DFS).\nAlgorithms: Dijkstra, Bellman Ford, Floyd Warshall, Prim\nProblems: Number of Islands, Clone Graph, Course Schedule, Network Delay Time.",
+    "keywords": [
+      "graph"
+    ]
+  },
+  {
+    "title": "Hashing",
+    "category": "Notes Data",
+    "content": "Introduction: Hashing maps keys to values using hash functions.\nData Structures: HashMap stores key-value pairs while HashSet stores unique values.\nApplications: Frequency Counting, Duplicate Detection, Fast Lookup.\nComplexity: Average lookup, insertion and deletion are O(1).\nProblems: Two Sum, Group Anagrams, Longest Consecutive Sequence, Top K Frequent Elements.",
+    "keywords": [
+      "hashing"
+    ]
+  },
+  {
+    "title": "DynamicProgramming",
+    "category": "Notes Data",
+    "content": "Introduction: Dynamic Programming solves overlapping subproblems by storing previous results.\nTypes: Memoization (Top Down) and Tabulation (Bottom Up).\nWhen to Use: Use DP when a problem has overlapping subproblems and optimal substructure.\nClassic Problems: Climbing Stairs, House Robber, Coin Change, Longest Increasing Subsequence.\nAdvanced: 0/1 Knapsack, Matrix Chain Multiplication, Edit Distance.",
+    "keywords": [
+      "dynamic",
+      "programming",
+      "dynamicprogramming"
+    ]
+  },
+  {
+    "title": "BinarySearch",
+    "category": "Notes Data",
+    "content": "Introduction: Binary Search works only on sorted data and repeatedly halves the search space.\nComplexity: Time Complexity: O(log n).\nApplications: Finding elements, Lower Bound, Upper Bound, Peak Element.\nPatterns: Binary Search on Answer is commonly used in interview problems.\nProblems: Search in Rotated Sorted Array, Koko Eating Bananas, Capacity to Ship Packages.",
+    "keywords": [
+      "binary",
+      "binarysearch",
+      "search"
+    ]
+  },
+  {
+    "title": "Recursion",
+    "category": "Notes Data",
+    "content": "Introduction: A recursive function calls itself until a base condition is met.\nBase Case: Every recursive function must have a stopping condition.\nApplications: Factorial, Fibonacci, Tree Traversals, Backtracking.\nBacktracking: Used for N-Queens, Sudoku Solver, Permutations and Combinations.\nComplexity: Depends on recursion depth and branching factor.",
+    "keywords": [
+      "recursion"
+    ]
+  },
+  {
+    "title": "Arrays",
+    "category": "Topic Notes",
+    "content": "const videos = [ language: \"Python\", url: \"https://www.youtube.com/watch?v=wgJZy7-muwY\" , language: \"Java\", url: \"https://www.youtube.com/watch?v=0Af7PU1F8-Y\" , language: \"Javascript\", url: \"https://www.youtube.com/watch?v=R8rmfD9Y5-c\" , language: \"GoLang\", url: \"https://www.youtube.com/watch?v=YS4e4q9oBaU\" , language: \"C#\", url: \"https://www.youtube.com/watch?v=gfkTfcpWqAY\" , language: \"C++\", url: \"https://www.youtube.com/watch?v=92S4zgXN17o\" , language: \"Rust\", url: \"https://www.youtube.com/watch?v=M3s6dHWKaCs\" , language: \"Ruby\", url: \"https://www.youtube.com/watch?v=tRVxNd2Lb24\" , ]; export default function Arrays() return ( /* Center Container */ Arrays In this article, we introduce arrays, their implementations in popular languages, basic operations, and frequently encountered problems or interview questions. An array stores items (in C/C++ and Java primitive arrays) or references (in Python, JavaScript, Java non-primitive arrays) at contiguous memory locations. It provides: Advantages Random Access: i-th item can be accessed in O(1) time. Cache Friendliness: contiguous storage grants strong locality. Disadvantages Insertions or deletions in the middle are expensive. Linear search in an unsorted array is O(n) . Basic Array Operations Applications Foundation for Stack, Queue, Deque. Graphs: adjacency lists or matrices. Hash tables, heaps, and more. Implementation in Different Languages Arrays in C Vector in C++ STL Arrays in Java ArrayList in Java List in Python Arrays in C# Arrays in JavaScript Link to Free Resources videos.map(( language, url ) => ( Video: Arrays in language )) /* Keeping your Problems sections unchanged */ /* ... (Easy, Medium, Hard Problems remain same) ... */ );",
+    "keywords": [
+      "concept",
+      "dsa",
+      "arrays"
+    ]
+  },
+  {
+    "title": "HuffmanEncoding",
+    "category": "Topic Notes",
+    "content": "export default function HuffmanEncoding() return ( Huffman Encoding Huffman Encoding is a lossless data compression algorithm used to reduce the size of data without losing any information. It works by assigning shorter codes to more frequent characters and longer codes to less frequent ones. /* Step-by-Step Process */ Steps in Huffman Encoding: Count the frequency of each character in the input data. Create a priority queue (min-heap) of nodes based on frequency. Extract the two smallest frequency nodes and merge them. Repeat until only one tree remains \u2013 this is the Huffman Tree. Assign binary codes to each character by traversing the tree. /* Diagrams */ Example Diagrams: /* Video Link */ Watch & Learn: /* Chatbot Reference */ \u2753 Didn\u2019t get the logic?\" \" Ask the Chatbot \" \" for a step-by-step explanation. );",
+    "keywords": [
+      "dsa",
+      "huffman",
+      "concept",
+      "huffmanencoding",
+      "encoding"
+    ]
+  },
+  {
+    "title": "LinkedLists",
+    "category": "Topic Notes",
+    "content": "const videos = [ language: \"Python\", url: \"https://www.youtube.com/watch?v=1iz9SRWdpX8\" , language: \"Java\", url: \"https://www.youtube.com/watch?v=hDwPD6kTmEk\" , language: \"C++\", url: \"https://www.youtube.com/watch?v=FZfjv7DraD4\" , language: \"C\", url: \"https://www.youtube.com/watch?v=MCIwn7mY4jY\" , ]; const listTypes = [ name: \"Singly Linked List\", pointerDesc: \"Data + Next pointer\", traversal: \"Forward direction only\", useCase: \"Basic stacks, simple sequential processing\", overhead: \"Low (1 pointer/node)\" , name: \"Doubly Linked List\", pointerDesc: \"Data + Next pointer + Previous pointer\", traversal: \"Bidirectional (Forward & Backward)\", useCase: \"Browser history navigation, LRU Cache systems\", overhead: \"High (2 pointers/node)\" , name: \"Circular Linked List\", pointerDesc: \"Tail node loops back to Head node\", traversal: \"Continuous looping loop loops\", useCase: \"Round-Robin CPU process scheduling, media loops\", overhead: \"Low to High (Depends on Singly/Doubly foundation)\" ]; export default function LinkedList() const [activeTypeTab, setActiveTypeTab] = useState(0); return ( /* Header Zone */ Mastering the Linked List Unlike rigid sequential layouts like arrays, a linked list adapts dynamically by weaving structural links between scattered memory points. Let's break down its internal mechanics, key structural variants, and algorithm use cases. /* Conceptual Breakdown */ What is a Linked List? The Node Structure The fundamental building block. Every isolated node contains raw information plus the pointer addresses that bind it to its neighbors. Non-Contiguous Allocation Arrays demand an absolute block of contiguous storage slots. Linked lists can break elements apart across completely isolated gaps in memory. The Pointer Chain Accessing items relies exclusively on chasing down paths sequential step-by-step from the initial entry node point (the Head). /* Structural Variations Tabs */ Structural Variations & Core Types /* Tabs Control Row */ listTypes.map((type, idx) => ( setActiveTypeTab(idx) className=py-2 px-4 font-medium text-sm whitespace-nowrap border-b-2 transition $ activeTypeTab === idx ? \"border-[#00FFFF] text-[#00FFFF]\" : \"border-transparent text-gray-500 hover:text-gray-300\" > type.name )) /* Tab Content Display */ listTypes[activeTypeTab].name listTypes[activeTypeTab].name === \"Singly Linked List\" && \"Each node holds just one forwarding reference. Ideal when minimizing system memory utilization is paramount.\" listTypes[activeTypeTab].name === \"Doubly Linked List\" && \"Includes dual structural links. Dramatically simplifies absolute insertion and element parsing directions at the cost of heavier node sizing storage allocations.\" listTypes[activeTypeTab].name === \"Circular Linked List\" && \"Locks elements together into endless loops. The definitive selection for handling continuous scheduling pipelines.\" Pointer Setup: listTypes[activeTypeTab].pointerDesc Traversal Vector: listTypes[activeTypeTab].traversal Memory Overhead: listTypes[activeT",
+    "keywords": [
+      "linkedlists",
+      "dsa",
+      "linked",
+      "lists",
+      "concept"
+    ]
+  },
+  {
+    "title": "Recursion",
+    "category": "Topic Notes",
+    "content": "export default function Recursion() return ( /* Title */ Recursion /* Introduction */ Recursion is a programming technique where a function calls itself either directly or indirectly to solve a problem. It breaks down a problem into smaller subproblems until it reaches a base condition. /* Why Recursion? */ Why Use Recursion? Useful for problems that can be divided into similar subproblems. Provides cleaner and more readable code for complex algorithms. Widely used in algorithms like DFS, backtracking, and divide & conquer. /* Key Concepts */ Key Concepts in Recursion: Base Case: Condition where recursion stops to prevent infinite loops. Recursive Case: The part where the function calls itself with a smaller input. Stack Memory: Each function call is stored in the call stack until completed. /* Types of Recursion */ Types of Recursion: Direct Recursion: Function calls itself directly. Indirect Recursion: Function calls another function which calls it back. Tail Recursion: Recursive call is the last statement in the function. Non-Tail Recursion: Recursive call is followed by other operations. /* Example Diagram */ Example Diagram: /* Code Example */ Example: Factorial using Recursion function factorial(n) if (n === 0 || n === 1) return 1; // Base case return n * factorial(n - 1); // Recursive case console.log(factorial(5)); // Output: 120 /* Video Link */ Watch & Learn: /* Chatbot Reference */ \u2753 Still confused about recursion?\" \" Ask the Chatbot \" \" for a step-by-step explanation. );",
+    "keywords": [
+      "dsa",
+      "recursion",
+      "concept"
+    ]
+  },
+  {
+    "title": "Searching",
+    "category": "Topic Notes",
+    "content": "export default function Searching() const [algo, setAlgo] = useState(\"linear\"); const [language, setLanguage] = useState(\"python\"); const youtubeLinks = linear: \"https://www.youtube.com/results?search_query=linear+search+algorithm\", binary: \"https://www.youtube.com/results?search_query=binary+search+algorithm\", ; const codeSnippets = linear: python: def linear_search(arr, target): for i, val in enumerate(arr): if val == target: return i return -1 # Example arr = [5, 2, 9, 1, 7] print(linear_search(arr, 9)) # 2 print(linear_search(arr, 3)) # -1 , java: class LinearSearch static int linearSearch(int[] arr, int target) for (int i = 0; i int linear_search(int arr[], int n, int target) for (int i = 0; i using namespace std; int linear_search(const vector & arr, int target) for (int i = 0; i arr = 5, 2, 9, 1, 7; cout int binary_search(int arr[], int n, int target) int l = 0, r = n - 1; while (l using namespace std; int binary_search_idx(const vector & arr, int target) int l = 0, r = (int)arr.size() - 1; while (l arr = 1, 2, 5, 7, 9; cout Searching Techniques Learn two fundamental search techniques:\" \" Linear (Sequential) Search and\" \" Binary Search . Linear Search scans elements one by one. Binary Search repeatedly halves the search space, but\" \" requires a sorted array . /* Algo Tabs */ [ key: \"linear\", label: \"Linear / Sequential Search\" , key: \"binary\", label: \"Binary Search\" , ].map(( key, label ) => ( setAlgo(key) className=px-4 py-2 rounded-lg border transition $ algo === key ? \"bg-[#00FFFF] text-black border-transparent\" : \"bg-transparent text-[#00FFFF] border border-[#00FFFF] hover:bg-[#00FFFF] hover:text-black\" > label )) /* Language Selector */ Select Language: setLanguage(e.target.value) className=\"bg-gray-800 text-white p-2 rounded\" > languages.map((l) => ( l.label )) /* Code Display */ codeSnippets[algo][language] /* Complexity + Notes */ algo === \"linear\" ? \"Linear Search\" : \"Binary Search\" \u2013 Complexity algo === \"linear\" ? ( Time: O(n) in worst and average case Space: O(1) Works on unsorted arrays Stable and simple to implement ) : ( Time: O(log n) worst/average, O(1) best Space: O(1) (iterative), O(log n) (recursive) Requires sorted array Great for large datasets ) Learn More Watch algo === \"linear\" ? \"Linear Search\" : \"Binary Search\" on YouTube Didn\u2019t get the logic?\" \" Ask the Chatbot Open Chatbot /* Tips */ Tips Use Linear Search for very small or unsorted lists. Use Binary Search when data is sorted or can be sorted once. For duplicates, you can modify Binary Search to find the first/last index. );",
+    "keywords": [
+      "dsa",
+      "searching",
+      "concept"
+    ]
+  },
+  {
+    "title": "Stack",
+    "category": "Topic Notes",
+    "content": "const videos = [ language: \"Python\", url: \"https://www.youtube.com/watch?v=zwb3GmNAtFk\" , language: \"Java\", url: \"https://www.youtube.com/watch?v=wjI1WNcIntg\" , language: \"C\", url: \"https://www.youtube.com/watch?v=HjdJzNoT_qg\" , language: \"C++\", url: \"https://www.youtube.com/watch?v=1AJ4ldcH2t4\" , ]; const implementationStyles = [ type: \"Array Implementation\", allocation: \"Contiguous Memory Block\", pros: \"Fast random cache lookups, zero pointer memory footprint overhead\", cons: \"Fixed size limit threshold, resizing introduces full array copying delays\", overflowBehavior: \"Throws Stack Overflow if limits are breached\" , type: \"Linked List Implementation\", allocation: \"Dynamic Heap Segments\", pros: \"Boundless continuous growing scope, no upfront sizing parameters needed\", cons: \"Extra pointer address footprint tracking per node, worse cache locality\", overflowBehavior: \"Only hits limits if total system memory runs out\" ]; export default function Stack() const [activeTab, setActiveTab] = useState(0); return ( /* Main Content Header */ The Stack Data Structure A linear structural pattern controlled entirely by a strict sequencing rule: Last-In, First-Out (LIFO) . Elements can only enter or leave through a single doorway called the Top . /* Fundamental Design Cards */ Core Mechanics LIFO Access Strategy The item added most recently is permanently prioritized. You cannot bypass the boundary line to target deeper elements without pulling off everything above them first. Restricted Mutability There are no random inserts at index i. All mutations take place instantly at the current index position tracked by the single top marker reference. Safety Invariant Guard Prevents out-of-bounds corruption errors. Attempts to extract elements from an empty container trigger a critical structural error called Stack Underflow . /* Implementation Strategy Selector */ Architectural Implementations Comparison implementationStyles.map((style, idx) => ( setActiveTab(idx) className=py-2 px-4 font-medium text-sm whitespace-nowrap border-b-2 transition $ activeTab === idx ? \"border-[#00FFFF] text-[#00FFFF]\" : \"border-transparent text-gray-500 hover:text-gray-300\" > style.type )) implementationStyles[activeTab].type Memory Blueprint: implementationStyles[activeTab].allocation Key Advantage: implementationStyles[activeTab].pros Structural Con: implementationStyles[activeTab].cons Boundary Limit Risk: implementationStyles[activeTab].overflowBehavior activeTab === 0 && \"[Index 0: Base] -> [Index 1] -> [Index 2: Top pointer] -> [Empty]\" activeTab === 1 && \"[Top pointer] -> [Node C] -> [Node B] -> [Node A: Base] -> NULL\" /* Complexity Profiles Table */ Operation Complexity Run Times Standard Method Time Complexity Space Complexity Core Objective push(x) O(1) O(1) Appends item onto the topmost level location pop() O(1) O(1) Detaches and yields the current topmost item peek() / top() O(1) O(1) Inspects values at top without removing them isEmpty() O(1) O(1) Evaluates whether target r",
+    "keywords": [
+      "concept",
+      "dsa",
+      "stack"
+    ]
+  },
+  {
+    "title": "Trees",
+    "category": "Topic Notes",
+    "content": "const videos = [ language: \"Python\", url: \"https://www.youtube.com/watch?v=RBSGKlAvoiM\", , language: \"Java\", url: \"https://www.youtube.com/watch?v=H5JubkIy_p8\", , language: \"C\", url: \"https://www.youtube.com/watch?v=86g8jAQug04\", , language: \"C++\", url: \"https://www.youtube.com/watch?v=fAAZixBzIAI\", , ]; export default function Trees() return ( Trees A Tree is a hierarchical data structure consisting of nodes. The topmost node is called the root , and each node may have zero or more child nodes. In a\" \" Binary Tree , each node has at most two children:\" \" left and right . Characteristics The root node has no parent. Each edge connects a parent to its child. There is exactly one path between any two nodes. Trees are non-linear data structures. Basic Tree Operations (Choose Your Language) Applications Storing hierarchical data like file systems. Binary Search Trees for fast lookup. Syntax trees in compilers. Heaps for priority queues. Routing algorithms in networks. Free Resources videos.map(( language, url ) => ( videoTrees in language )) Basic Problems Inorder Traversal Preorder Traversal Postorder Traversal Level Order Traversal Height of a Tree Count Nodes Medium Problems Check if two trees are identical Lowest Common Ancestor (LCA) Diameter of a Binary Tree Convert Sorted Array to BST Sum of all Nodes Hard Problems Serialize and Deserialize a Tree Vertical Order Traversal Boundary Traversal Maximum Path Sum Construct Tree from Preorder and Inorder );",
+    "keywords": [
+      "dsa",
+      "concept",
+      "trees"
+    ]
+  },
+  {
+    "title": "Basics",
+    "category": "Learning Pages",
+    "content": "export default function Basic() return ( /* Heading */ Basics of Data Structures & Algorithms Before diving deep into advanced DSA topics, it\u2019s crucial to understand the foundation \u2014 time complexity, recursion, and basic sorting algorithms. These concepts form the backbone of problem solving in computer science. /* Time Complexity */ Time Complexity Time complexity is the rate at which the run time of an algorithm increases as the size of the input increases. It helps us compare algorithms without running them. Common Complexities: O(1) \u2013 Constant time: Takes the same time regardless of input size. O(log n) \u2013 Logarithmic time: Grows slowly, e.g., Binary Search. O(n) \u2013 Linear time: Directly proportional to input size. O(n log n) \u2013 Good for sorting large datasets (Merge Sort, Quick Sort). O(n\u00b2) \u2013 Poor performance for large inputs (Bubble Sort). Input Size (n) O(1) O(log n) O(n) O(n log n) O(n\u00b2) ---------------------------------------------------------------------- 10 1 3 10 30 100 100 1 6 100 600 10,000 1000 1 10 1000 10,000 1,000,000 Think of time complexity like traffic: O(1) is a private road, O(n\u00b2) is a jam-packed highway during rush hour. /* Recursion */ Recursion Recursion is when a function calls itself to solve smaller instances of the same problem. It can be direct (function calls itself) or indirect (two functions call each other). Key Components: Base case \u2013 Stops the recursion. Recursive case \u2013 Calls itself with smaller input. // Factorial using Recursion int factorial(int n) if (n Analogy: Imagine Russian dolls, where each doll contains a smaller doll inside, until you reach the smallest one. /* Sorting Algorithms */ Sorting Algorithms Sorting is the process of arranging elements in a particular order (ascending or descending). A good sorting algorithm should be efficient, stable, and easy to implement. Common Sorting Algorithms: Bubble Sort \u2013 Swap adjacent elements if out of order. Time: O(n\u00b2) Insertion Sort \u2013 Build sorted list one element at a time. Time: O(n\u00b2) Merge Sort \u2013 Divide & merge. Time: O(n log n) Quick Sort \u2013 Partition & sort subarrays. Time: O(n log n) // Example: Bubble Sort in Java void bubbleSort(int arr[]) int n = arr.length; for (int i = 0; i arr[j+1]) int temp = arr[j]; arr[j] = arr[j+1]; arr[j+1] = temp; Analogy: Sorting is like arranging books on a shelf from shortest to tallest. /* Ask Chatbot */ \u2753 Didn\u2019t get the logic? Ask the chatbot );",
+    "keywords": [
+      "basics",
+      "sorting",
+      "time complexity",
+      "big o"
+    ]
+  },
+  {
+    "title": "EasyDSA",
+    "category": "Learning Pages",
+    "content": "const topics = [ id: \"basics\", label: \"Basics & Complexity\", desc: \"Big O Notation, basic loops, recursion fundamentals, and memory footprints.\", count: 5 , id: \"arrays\", label: \"Arrays & Strings\", desc: \"Contiguous storage, matrix manipulation, vectors, and string parsing algorithms.\", count: 5 , id: \"linkedlists\", label: \"Linked Lists\", desc: \"Singly, doubly, and circular chain lists; pointer manipulation and cycle checks.\", count: 5 , id: \"stacks\", label: \"Stacks & Queues\", desc: \"LIFO/FIFO data ordering, expression parsing, and monotonic tracking structures.\", count: 5 , id: \"searching\", label: \"Searching\", desc: \"Linear vs Binary search boundaries, rotated spaces, and target matching.\", count: 5 , id: \"sorting\", label: \"Sorting\", desc: \"Bubble, Insertion, Merge, Quick, and Heap sort with analysis comparison matrices.\", count: 5 , id: \"trees\", label: \"Trees & BSTs\", desc: \"Binary Trees, traversals (DFS/BFS), height calculations, and BST validation.\", count: 5 , id: \"graphs\", label: \"Graphs\", desc: \"Adjacency matrices/lists, BFS, DFS, shortest path networks, and cycle detections.\", count: 5 , id: \"greedy\", label: \"Greedy Algorithms\", desc: \"Localized interval optimization, activity selection, and change calculations.\", count: 5 , id: \"dp\", label: \"Dynamic Programming\", desc: \"Memoization vs Tabulation, knapsacks, coin change, and structural sequences.\", count: 5 , id: \"advanced\", label: \"Advanced Structures\", desc: \"Tries, Disjoint Set Union (DSU), Segment Trees, and spatial division lists.\", count: 5 ]; // Curated Algorithmic Patterns & Sequences Cheat Sheet const patterns = [ name: \"Sliding Window\", description: \"Converts O(N^2) nested loops into O(N) linear scans by maintaining a dynamic range boundary over arrays or strings.\", useCase: \"Subarray sums, longest substring metrics, pattern matches.\", tip: \"Maintain a left pointer and expand the right pointer. Shift left to recover validity when thresholds break.\" , name: \"Two Pointers\", description: \"Traverses a sorted collection from both ends toward the middle (or two varying rates) to find matches.\", useCase: \"Pair sum validation, array reversals, sorting partitions.\", tip: \"If sum is too low, increment left. If sum is too high, decrement right.\" , name: \"Fast & Slow Pointers (Tortoise & Hare)\", description: \"Uses two variable-speed references moving across linear nodes to expose internal structures.\", useCase: \"Cycle detection, finding midpoints, finding cyclic loops.\", tip: \"Let fast move 2 steps and slow move 1 step. If they intersect, a cycle is proven.\" , name: \"Prefix Sum Precomputations\", description: \"Pre-calculates cumulative sums in O(N) to answer coordinate/interval query scopes in O(1) time.\", useCase: \"Subarray range query challenges, matrix region summation.\", tip: \"Formula: Sum[L..R] = Prefix[R] - Prefix[L-1].\" , name: \"Monotonic Stack / Queue\", description: \"Maintains stack elements in strictly ascending or descending order to identify boundary transitions.\", useCase: \"Next ",
+    "keywords": [
+      "easydsa",
+      "sorting",
+      "time complexity",
+      "big o"
+    ]
+  },
+  {
+    "title": "Patterns",
+    "category": "Learning Pages",
+    "content": "const logoMap = Leetcode: \"https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png\", Google: \"https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg\", Amazon: \"https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg\", Microsoft: \"https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg\", Facebook: \"https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png\", ; const patterns = [ name: \"Arrays & Hashing\", problems: [ id: \"two-sum\", name: \"Two Sum\", url: \"https://leetcode.com/problems/two-sum/\", difficulty: \"Easy\", companies: [\"Google\", \"Amazon\"] , id: \"contains-duplicate\", name: \"Contains Duplicate\", url: \"https://leetcode.com/problems/contains-duplicate/\", difficulty: \"Easy\", companies: [\"Microsoft\"] , id: \"missing-number\", name: \"Missing Number\", url: \"https://leetcode.com/problems/missing-number/\", difficulty: \"Easy\", companies: [\"Facebook\"] , id: \"product-of-array-except-self\", name: \"Product of Array Except Self\", url: \"https://leetcode.com/problems/product-of-array-except-self/\", difficulty: \"Medium\", companies: [\"Amazon\"] , id: \"top-k-frequent-elements\", name: \"Top K Frequent Elements\", url: \"https://leetcode.com/problems/top-k-frequent-elements/\", difficulty: \"Medium\", companies: [\"Google\"] , id: \"longest-consecutive-sequence\", name: \"Longest Consecutive Sequence\", url: \"https://leetcode.com/problems/longest-consecutive-sequence/\", difficulty: \"Hard\", companies: [\"Microsoft\"] , id: \"4-sum\", name: \"4Sum\", url: \"https://leetcode.com/problems/4sum/\", difficulty: \"Medium\", companies: [\"Facebook\"] , id: \"subarray-sum-equals-k\", name: \"Subarray Sum Equals K\", url: \"https://leetcode.com/problems/subarray-sum-equals-k/\", difficulty: \"Medium\", companies: [\"Google\"] , ], , name: \"Two Pointers & Sliding Window\", problems: [ id: \"container-with-most-water\", name: \"Container With Most Water\", url: \"https://leetcode.com/problems/container-with-most-water/\", difficulty: \"Medium\", companies: [\"Amazon\"] , id: \"two-sum-ii\", name: \"Two Sum II - Input Array Is Sorted\", url: \"https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/\", difficulty: \"Easy\", companies: [\"Microsoft\"] , id: \"3sum\", name: \"3Sum\", url: \"https://leetcode.com/problems/3sum/\", difficulty: \"Medium\", companies: [\"Facebook\"] , id: \"longest-substring-without-repeating-characters\", name: \"Longest Substring Without Repeating Characters\", url: \"https://leetcode.com/problems/longest-substring-without-repeating-characters/\", difficulty: \"Medium\", companies: [\"Google\"] , id: \"minimum-window-substring\", name: \"Minimum Window Substring\", url: \"https://leetcode.com/problems/minimum-window-substring/\", difficulty: \"Hard\", companies: [\"Amazon\"] , id: \"valid-palindrome-ii\", name: \"Valid Palindrome II\", url: \"https://leetcode.com/problems/valid-palindrome-ii/\", difficulty: \"Easy\", companies: [\"Microsoft\"] , id: \"sliding-window-maximum\", name: \"Sliding Window Maximum\", url: \"https://leetcode.com/problems/sliding-wi",
+    "keywords": [
+      "patterns"
+    ]
+  },
+  {
+    "title": "Notes",
+    "category": "Learning Pages",
+    "content": "const notesData = basics_of_DSA:Data Definition Data Definition defines a particular data with the following characteristics. Atomic \u2212 Definition should define a single concept. Traceable \u2212 Definition should be able to be mapped to some data element. Accurate \u2212 Definition should be unambiguous. Clear and Concise \u2212 Definition should be understandable. Data Object Data Object represents an object having a data. Data Type Data type is a way to classify various types of data such as integer, string, etc. which determines the values that can be used with the corresponding type of data, the type of operations that can be performed on the corresponding type of data. There are two data types \u2212 Built-in Data Type Derived Data Type Built-in Data Type Those data types for which a language has built-in support are known as Built-in Data types. For example, most of the languages provide the following built-in data types. Integers Boolean (true, false) Floating (Decimal numbers) Character and Strings Derived Data Type Those data types which are implementation independent as they can be implemented in one or the other way are known as derived data types. These data types are normally built by the combination of primary or built-in data types and associated operations on them. For example \u2212 List Array Stack Queue Basic Operations The data in the data structures are processed by certain operations. The particular data structure chosen largely depends on the frequency of the operation that needs to be performed on the data structure. Traversing Searching Insertion Deletion Sorting Merging, Array: # Array Array is a collection of items of the same variable type that are stored at contiguous memory locations. It is one of the most popular and simple data structures used in programming. Basic terminologies of Array Array Index: In an array, elements are identified by their indexes. Array index starts from 0. Array element: Elements are items stored in an array and can be accessed by their index. Array Length: The length of an array is determined by the number of elements it can contain. Memory representation of Array In an array, all the elements are stored in contiguous memory locations. So, if we initialize an array, the elements will be allocated sequentially in memory. This allows for efficient access and manipulation of elements. ## Operations on Array - Traversing - Insertion - Deletion - Searching - Sorting ## Advantages - Random access (constant time) - Easy to implement ## Disadvantages - Fixed size (static array) - Costly insertion/deletion ## Code Example (Insertion in Array in C++) \\\\\\cpp void insert(int arr[], int n, int key, int capacity, int index) if (n >= capacity) return; for (int i = n-1; i >= index; i--) arr[i+1] = arr[i]; arr[index] = key; \\\\\\ , \"Linked List\": # Linked List A linked list is a linear data structure where each element is a separate object. Each element (node) of a list is comprising of two items - the data and a reference to the ne",
+    "keywords": [
+      "notes",
+      "sorting"
+    ]
+  }
+]
