@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import DSATracker from "./pages/DSATracker";
 import Home from "./pages/Home";
 import Arrays from "./pages/TopicNotes/Arrays";
+import LinkedList from "./pages/TopicNotes/LinkedLists";
 import Stack from "./pages/TopicNotes/Stack";
 import Tree from "./pages/TopicNotes/Trees";
 import Searching from "./pages/TopicNotes/Searching";
